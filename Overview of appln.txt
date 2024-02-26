@@ -1,0 +1,19 @@
+
+Simple Shopping Cart in JAVA using Collections
+
+create an application to demonstrate the use of Collections in real world application. 
+I have chosen Shopping Cart application for this purpose because I found it perfect for the situation and 
+the use of collection in this application will help better in modelling real world applications.
+
+Project Structure
+1. Firstly create a new Java Project.
+2. Create the following package under your src folder,
+– collections.shoppingcart
+
+***Classes Used***
+
+Product.java
+Products.java
+Cart.java
+UI.java
+Main.java

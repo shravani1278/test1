@@ -1,0 +1,39 @@
+
+Products.java
+
+The role of this class in your shopping cart application is just to provide you with the store products. 
+In other words, this class is used to initialize your store as soon as the application is started. 
+As you can see, the initStoreItems() methods is used to add the products into a new ArrayList which is the type Product.
+As we have provided the Product class inside the <> braces as new ArrayList(),
+ this will tell the compiler that the list is of type Product and it can only contain an item which belongs to type Product.
+
+package collections.shoppingcart;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ *
+ * @author Varun Shrivastava (vslala)
+ */
+public class Products {
+    private final List<Product> products = new ArrayList<Product>();
+
+    public Products () {
+        this.initStoreItems();
+    }
+    
+    public List<Product> getProducts() {
+        return products;
+    }
+    
+    public void initStoreItems() {
+        String [] productNames = {"Lux Soap", "Fair n Lovely", "MTR"};
+        Double [] productPrice = {40.00d, 60.00d, 30.00d};
+        Integer [] stock = {10, 6, 10};
+        
+        for (int i=0; i < productNames.length; i++) {
+            this.products.add(new Product(i+1, productNames[i], productPrice[i], stock[i]));
+        }
+    }
+}
